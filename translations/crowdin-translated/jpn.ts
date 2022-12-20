@@ -2,18 +2,20 @@ import genres from './commons/genres';
 import common from './commons/common';
 import seriesDrawer from './commons/seriesDrawer';
 import seriesReader from './commons/seriesReader';
+import topNav from './commons/topNav';
 import seriesFooter from './commons/seriesFooter';
 import authModal from './commons/authModal';
 import followButton from './commons/followButton';
-const viewChapter = { ...genres,
+const viewChapters = { ...genres,
   ...common,
   ...seriesDrawer,
   ...seriesReader,
   ...seriesFooter,
+  ...topNav,
   ...authModal,
   ...followButton,
-  LABEL_WARNING_MESSAGE: `This Series contains adult themes and situations and is recommended
-  for mature audiences. Viewer's discretions is advised. Proceed to view
-  content?`
+  LABEL_DESCRIPTION: 'Description',
+  LABEL_CONTINUE_READING_BUTTON: 'Continue reading',
+  LABEL_FIRST_CHAPTER_BUTTON: 'First chapter'
 };
-export default viewChapter;
+export default viewChapters;
