@@ -1,0 +1,3 @@
+files:
+  - source: /translations/manual-translate/en/**/*.ts
+    translation: /translations/crowdin-translated/%three_letters_code%.ts
