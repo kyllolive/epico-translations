@@ -1,6 +1,0 @@
-const tagForm = {
-  LABEL_TAG_TEXTFIELD: 'LABEL_TAG_TEXTFIELD',
-  LABEL_TAG_PLACEHOLDER: 'LABEL_TAG_PLACEHOLDER',
-};
-
-export default tagForm;
