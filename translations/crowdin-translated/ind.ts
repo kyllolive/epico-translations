@@ -1,20 +1,17 @@
-const topNav = {
-  LABEL_HOME: 'Home',
-  LABEL_GENRE: 'Genres',
-  LABEL_TRANSLATE: 'Scanlate',
-  LABEL_NOTIFICATION: 'Notifications',
-  LABEL_ACCOUNT: 'My Account',
-  LABEL_ABOUT_US: 'About us',
-  LABEL_SIGN_IN: 'Sign in',
-  LABEL_SIGN_OUT: 'Sign out',
-  LABEL_SETTINGS: 'Settings',
-  LABEL_SEARCH: 'Search',
-  LABEL_PUBLISH: 'Publish',
-  TOOLTIP_CREATE_SERIES: 'Create series',
-  TOOLTIP_SERIES_LIST: 'Series list',
-  TOOLTIP_MENU: 'Menu',
-  LABEL_SIGNED_IN_AS: 'Signed in as',
-  LABEL_MY_PROFILE: 'My Profile',
-  LABEL_MY_ACCOUNT_SETTINGS: 'My Account Setting'
+import topNav from './commons/topNav';
+import common from './commons/common';
+import authModal from './commons/authModal';
+const home = { ...topNav,
+  ...common,
+  ...authModal,
+  LABEL_ABOUT_US_HEADER_5: 'ABOUT US',
+  LABEL_ABOUT_US_BODY_5_1: 'Be it through text or illustrations, we believe everyone has a story to share.',
+  LABEL_ABOUT_US_BODY_5_2: 'We also believe great comics can come from anywhere.',
+  LABEL_ABOUT_US_BODY_5_3: 'We are a group of comic fans determined to build tools',
+  LABEL_ABOUT_US_BODY_5_4: 'to help comic creators connect their stories to as many people as possible.',
+  LABEL_ABOUT_US_HEADER_6: "WHAT'S YOUR STORY?",
+  LABEL_SIGN_UP: 'Sign up',
+  LABEL_CREATE_SERIES: 'Create series',
+  LABEL_MY_PROFILE: 'My profile'
 };
-export default topNav;
+export default home;
