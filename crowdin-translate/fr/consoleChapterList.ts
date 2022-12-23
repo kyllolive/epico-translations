@@ -1,29 +1,26 @@
 import topNav from './commons/topNav';
 import common from './commons/common';
 import deleteDialog from './commons/deleteDialog';
-
-const consoleChapterList = {
-  ...topNav,
+const consoleChapterList = { ...topNav,
   ...common,
   ...deleteDialog,
-  LABEL_COLUMN_ID: 'IDENTIFIANT',
-  LABEL_ADD_NEW_CHAPTER: 'Ajouter un nouveau chapitre',
-  LABEL_COLUMN_TITLE: 'Titre',
-  LABEL_COLUMN_LANGUAGE: 'Langue',
-  LABEL_COLUMN_STATUS: 'Statut',
-  LABEL_COLUMN_CHAPTERS: 'Chapitres',
-  LABEL_COLUMN_PUBLISHED: 'Publié',
-  LABEL_COLUMN_DESCRIPTION: 'La description',
-  LABEL_COLUMN_PAGES: 'pages',
-  LABEL_COLUMN_CREATED_DATE: 'Date de création',
-  LABEL_NO_CHAPTERS: 'Aucun chapitre',
-  LABEL_NO_SERIES: 'Aucune série',
-  LABEL_TRANSLATION: 'Traduction',
-  LABEL_EDIT: 'Éditer',
-  LABEL_DELETE: 'Effacer',
-  LABEL_ROWS_PER_PAGE: 'Lignes par page :',
-  LABEL_PRIVATE_VIEW: 'Vue privée',
-  LABEL_SHARE_ACTION_MENU: 'Partager/Collaborateurs',
+  LABEL_COLUMN_ID: 'ID',
+  LABEL_ADD_NEW_CHAPTER: 'Add New Chapter',
+  LABEL_COLUMN_TITLE: 'Title',
+  LABEL_COLUMN_LANGUAGE: 'Language',
+  LABEL_COLUMN_STATUS: 'Status',
+  LABEL_COLUMN_CHAPTERS: 'Chapters',
+  LABEL_COLUMN_PUBLISHED: 'Published',
+  LABEL_COLUMN_DESCRIPTION: 'Description',
+  LABEL_COLUMN_PAGES: 'Pages',
+  LABEL_COLUMN_CREATED_DATE: 'Created Date',
+  LABEL_NO_CHAPTERS: 'No Chapters',
+  LABEL_NO_SERIES: 'No Series',
+  LABEL_TRANSLATION: 'Translation',
+  LABEL_EDIT: 'Edit',
+  LABEL_DELETE: 'Delete',
+  LABEL_ROWS_PER_PAGE: 'Rows per page:',
+  LABEL_PRIVATE_VIEW: 'Private View',
+  LABEL_SHARE_ACTION_MENU: 'Share/Collaborators'
 };
-
 export default consoleChapterList;
