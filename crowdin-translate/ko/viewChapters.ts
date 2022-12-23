@@ -6,9 +6,7 @@ import topNav from './commons/topNav';
 import seriesFooter from './commons/seriesFooter';
 import authModal from './commons/authModal';
 import followButton from './commons/followButton';
-
-const viewChapters = {
-  ...genres,
+const viewChapters = { ...genres,
   ...common,
   ...seriesDrawer,
   ...seriesReader,
@@ -16,9 +14,8 @@ const viewChapters = {
   ...topNav,
   ...authModal,
   ...followButton,
-  LABEL_DESCRIPTION: '설명',
-  LABEL_CONTINUE_READING_BUTTON: '계속 읽기',
-  LABEL_FIRST_CHAPTER_BUTTON: '첫 번째 장',
+  LABEL_DESCRIPTION: 'Description',
+  LABEL_CONTINUE_READING_BUTTON: 'Continue reading',
+  LABEL_FIRST_CHAPTER_BUTTON: 'First chapter'
 };
-
 export default viewChapters;
