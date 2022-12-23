@@ -3,26 +3,23 @@ import topNav from './commons/topNav';
 import common from './commons/common';
 import authModal from './commons/authModal';
 import donationBox from './commons/donationBox';
-
-const profile = {
-  ...donationBox,
+const profile = { ...donationBox,
   ...genres,
   ...topNav,
   ...common,
   ...authModal,
-  NEW_COVER_ERROR_LABEL: '哎呀！我们无法保存您的新封面',
-  LABEL_SAVE: '节省',
-  LABEL_CANCEL: '取消',
-  LABEL_SUCCESS_UPDATE_PROFILE: '我们已成功更新您的个人资料',
-  LABEL_UNABLE_SAVE_CHANGES: '哦哦！我们无法保存您的更改',
-  LABEL_ADD_ANOTHER: '加上另一个',
-  LABEL_EDIT_PROFILE: '编辑个人资料',
-  LABEL_JOINED_DATE: '加入日期',
-  LABEL_UPDATE_PROFILE_INFORMATION: '快速更新个人资料信息',
-  LABEL_CHANGE_PROFILE_PICTURE: '更改个人资料图片',
-  LABEL_ERROR_NEW_PROFILE: '哎呀！我们无法保存您的新个人资料',
-  LABEL_ERROR_NEW_COVER: '哎呀！我们无法保存您的新封面',
-  LABEL_ERROR_UPLOAD_COVER: '哎呀！我们无法上传您的封面',
+  NEW_COVER_ERROR_LABEL: 'Oops! We were unable to save your new cover',
+  LABEL_SAVE: 'Save',
+  LABEL_CANCEL: 'Cancel',
+  LABEL_SUCCESS_UPDATE_PROFILE: 'We were successful updating your profile',
+  LABEL_UNABLE_SAVE_CHANGES: 'Uh oh! We were unable to save your changes',
+  LABEL_ADD_ANOTHER: 'Add Another',
+  LABEL_EDIT_PROFILE: 'Edit Profile',
+  LABEL_JOINED_DATE: 'Joined date',
+  LABEL_UPDATE_PROFILE_INFORMATION: 'Quick update profile information',
+  LABEL_CHANGE_PROFILE_PICTURE: 'Change profile picture',
+  LABEL_ERROR_NEW_PROFILE: 'Oops! We were unable to save your new profile',
+  LABEL_ERROR_NEW_COVER: 'Oops! We were unable to save your new cover',
+  LABEL_ERROR_UPLOAD_COVER: 'Oops! We were unable to upload your cover'
 };
-
 export default profile;
