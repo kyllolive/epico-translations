@@ -1,6 +1,5 @@
 const tagForm = {
-  LABEL_TAG_TEXTFIELD: 'Mga tag(opsyonal - max 5)',
-  LABEL_TAG_PLACEHOLDER: 'Mga tag',
+  LABEL_TAG_TEXTFIELD: 'Tags(optional - max 5)',
+  LABEL_TAG_PLACEHOLDER: 'Tags'
 };
-
 export default tagForm;
