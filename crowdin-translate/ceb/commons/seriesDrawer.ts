@@ -1,16 +1,15 @@
 const seriesDrawer = {
-  LABEL_INFORMATION_TAB_NEW_SERIES_MSG: 'BAG-ONG KAPITULO KADA LUNES, BIYERNES',
-  LABEL_INFORMATION: 'Impormasyon',
-  LABEL_LANGUAGE: 'Pinulongan',
-  LABEL_READ_CHAPTER_1: 'Basaha: Kapitulo 1',
-  LABEL_CREATORS: 'Mga Magbubuhat',
-  LABEL_PUBLISHER: 'Magmamantala',
-  LABEL_ARTIST: 'Artista',
-  LABEL_AUTHOR: 'Awtor',
-  LABEL_SEE_MORE: 'Tan-awa pa',
-  LABEL_PUBLISHER_OTHER_WORK: 'Ang ubang mga buhat sa magmamantala',
-  LABEL_SERIES_YOU_MIGHT_LIKE: 'Serye nga tingali gusto nimo',
-  LABEL_NOT_PUBLISHED_CHAPTER: 'Wala gimantala',
+  LABEL_INFORMATION_TAB_NEW_SERIES_MSG: 'NEW CHAPTER EVERY MONDAY, FRIDAY',
+  LABEL_INFORMATION: 'Information',
+  LABEL_LANGUAGE: 'Language',
+  LABEL_READ_CHAPTER_1: 'Read: Chapter 1',
+  LABEL_CREATORS: 'Creators',
+  LABEL_PUBLISHER: 'Publisher',
+  LABEL_ARTIST: 'Artist',
+  LABEL_AUTHOR: 'Author',
+  LABEL_SEE_MORE: 'See more',
+  LABEL_PUBLISHER_OTHER_WORK: "Publisher's other works",
+  LABEL_SERIES_YOU_MIGHT_LIKE: 'Series you might like',
+  LABEL_NOT_PUBLISHED_CHAPTER: 'Not published'
 };
-
 export default seriesDrawer;
