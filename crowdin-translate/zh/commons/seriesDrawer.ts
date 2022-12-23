@@ -1,16 +1,15 @@
 const seriesDrawer = {
-  LABEL_INFORMATION_TAB_NEW_SERIES_MSG: '每周一、周五都有新章节',
-  LABEL_INFORMATION: '信息',
-  LABEL_LANGUAGE: '语',
-  LABEL_READ_CHAPTER_1: '阅读：第 1 章',
-  LABEL_CREATORS: '创作者',
-  LABEL_PUBLISHER: '出版商',
-  LABEL_ARTIST: '艺术家',
-  LABEL_AUTHOR: '作者',
-  LABEL_SEE_MORE: '看更多',
-  LABEL_PUBLISHER_OTHER_WORK: '出版商的其他作品',
-  LABEL_SERIES_YOU_MIGHT_LIKE: '你可能喜欢的系列',
-  LABEL_NOT_PUBLISHED_CHAPTER: '未发表',
+  LABEL_INFORMATION_TAB_NEW_SERIES_MSG: 'NEW CHAPTER EVERY MONDAY, FRIDAY',
+  LABEL_INFORMATION: 'Information',
+  LABEL_LANGUAGE: 'Language',
+  LABEL_READ_CHAPTER_1: 'Read: Chapter 1',
+  LABEL_CREATORS: 'Creators',
+  LABEL_PUBLISHER: 'Publisher',
+  LABEL_ARTIST: 'Artist',
+  LABEL_AUTHOR: 'Author',
+  LABEL_SEE_MORE: 'See more',
+  LABEL_PUBLISHER_OTHER_WORK: "Publisher's other works",
+  LABEL_SERIES_YOU_MIGHT_LIKE: 'Series you might like',
+  LABEL_NOT_PUBLISHED_CHAPTER: 'Not published'
 };
-
 export default seriesDrawer;
