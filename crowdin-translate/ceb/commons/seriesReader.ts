@@ -1,7 +1,6 @@
 const seriesReader = {
-  LABEL_LOADING_CHAPTER: 'Nagkarga sa kapitulo...',
-  LABEL_NO_CHAPTER_SELECTED: 'Walay gipili nga kapitulo',
-  LABEL_NO_PERMISSION_TO_VIEW: 'Walay permiso sa pagtan-aw',
+  LABEL_LOADING_CHAPTER: 'Loading chapter...',
+  LABEL_NO_CHAPTER_SELECTED: 'No chapter selected',
+  LABEL_NO_PERMISSION_TO_VIEW: 'No permission to view'
 };
-
 export default seriesReader;
