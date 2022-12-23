@@ -1,24 +1,17 @@
 import topNav from './commons/topNav';
 import common from './commons/common';
 import authModal from './commons/authModal';
-
-const home = {
-  ...topNav,
+const home = { ...topNav,
   ...common,
   ...authModal,
-  LABEL_ABOUT_US_HEADER_5: 'हमारे बारे में',
-  LABEL_ABOUT_US_BODY_5_1:
-    'पाठ या चित्र के माध्यम से हो, हम मानते हैं कि हर किसी के पास साझा करने के लिए एक कहानी है।',
-  LABEL_ABOUT_US_BODY_5_2:
-    'हम यह भी मानते हैं कि महान कॉमिक्स कहीं से भी आ सकती हैं।',
-  LABEL_ABOUT_US_BODY_5_3:
-    'हम उपकरण बनाने के लिए दृढ़ संकल्पित हास्य प्रशंसकों का एक समूह हैं',
-  LABEL_ABOUT_US_BODY_5_4:
-    'हास्य रचनाकारों को उनकी कहानियों को अधिक से अधिक लोगों से जोड़ने में मदद करने के लिए।',
-  LABEL_ABOUT_US_HEADER_6: 'आपकी कहानी क्या है?',
-  LABEL_SIGN_UP: 'साइन अप करें',
-  LABEL_CREATE_SERIES: 'श्रृंखला बनाएं',
-  LABEL_MY_PROFILE: 'मेरी प्रोफाइल',
+  LABEL_ABOUT_US_HEADER_5: 'ABOUT US',
+  LABEL_ABOUT_US_BODY_5_1: 'Be it through text or illustrations, we believe everyone has a story to share.',
+  LABEL_ABOUT_US_BODY_5_2: 'We also believe great comics can come from anywhere.',
+  LABEL_ABOUT_US_BODY_5_3: 'We are a group of comic fans determined to build tools',
+  LABEL_ABOUT_US_BODY_5_4: 'to help comic creators connect their stories to as many people as possible.',
+  LABEL_ABOUT_US_HEADER_6: "WHAT'S YOUR STORY?",
+  LABEL_SIGN_UP: 'Sign up',
+  LABEL_CREATE_SERIES: 'Create series',
+  LABEL_MY_PROFILE: 'My profile'
 };
-
 export default home;
