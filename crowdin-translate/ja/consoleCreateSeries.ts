@@ -3,78 +3,61 @@ import common from './commons/common';
 import imageUploader from './commons/imageUploader';
 import genres from './commons/genres';
 import tagForm from './commons/tagForm';
-
-const consoleCreateSeries = {
-  ...genres,
+const consoleCreateSeries = { ...genres,
   ...common,
   ...topNav,
   ...imageUploader,
   ...tagForm,
-  LABEL_SERIES: 'シリーズ',
-  LABEL_CHAPTER: '章',
-  LABEL_SOMETHING_WENT_WRONG:
-    'エラーが発生しました。後でもう一度お試しください。',
-  LABEL_GO_BACK: '戻る',
-  LABEL_ADD_NEW_SERIES: '新しいシリーズを追加',
-  LABEL_NEXT_CHAPTER: '次の章',
-  LABEL_SUBMIT: '送信',
+  LABEL_SERIES: 'series',
+  LABEL_CHAPTER: 'chapter',
+  LABEL_SOMETHING_WENT_WRONG: 'Oops something went wrong, please try again later!',
+  LABEL_GO_BACK: 'Go Back',
+  LABEL_ADD_NEW_SERIES: 'Add New Series',
+  LABEL_NEXT_CHAPTER: 'next: chapter',
+  LABEL_SUBMIT: 'Submit',
   // FORM VALIDATION
-  FORM_VALIDATION_DESCRIPTION_MAX:
-    'シリーズの説明のタイトルは 2500 文字以内にする必要があります',
-  FORM_VALIDATION_DESCRIPTION_REQUIRED: 'シリーズの説明が必要です',
-  FORM_VALIDATION_GENRE_REQUIRED: 'ジャンル必須',
-  FORM_VALIDATION_GENRE_MAX: 'ジャンル フィールドには 3 つ以下の項目が必要です',
-  FORM_VALIDATION_LANGUAGE_ID_REQUIRED: '言語が必要です',
-  FORM_VALIDATION_TITLE_MAX: 'シリーズのタイトルは 100 文字以内にしてください',
-  FORM_VALIDATION_TITLE_MATCHES:
-    '文字 (a ～ z)、数字 (0 ～ 9)、特殊文字 (\':?"!-_&()<>.,+=@#$%|) のみを使用できます。',
-  FORM_VALIDATION_TITLE_REQUIRED: 'シリーズタイトル必須',
-  FORM_VALIDATION_COVER_REQUIRED: '表紙画像必須！',
-  FORM_VALIDATION_BANNER_REQUIRED: 'バナー画像必須！',
-  FORM_VALIDATION_CHAPTER_DESCRIPTION_MAX:
-    'チャプターの説明は 2500 文字以内にしてください',
-  FORM_VALIDATION_CHAPTER_DESCRIPTION_REQUIRED: '章の説明が必要です',
-  FORM_VALIDATION_CHAPTER_NOTE_MAX:
-    '章のメモは 2500 文字以内にする必要があります',
-  FORM_VALIDATION_CHAPTER_PUBLISHED_REQUIRED: '公開は必須です',
-  FORM_VALIDATION_CHAPTER_TITLE_MAX:
-    '章のタイトルは 100 文字以内にする必要があります',
-  FORM_VALIDATION_CHAPTER_TITLE_MATCHES:
-    '文字 (a ～ z)、数字 (0 ～ 9)、特殊文字 (\':?"!-_&()<>.,+=@#$%|) のみを使用できます。',
-  FORM_VALIDATION_CHAPTER_TITLE_REQUIRED: '章のタイトルは必須です',
-  FORM_VALIDATION_CHAPTER_PAGES_MIN:
-    '少なくとも 1 つの画像を含める必要があります',
+  FORM_VALIDATION_DESCRIPTION_MAX: 'Series description title must be at most 2500 characters',
+  FORM_VALIDATION_DESCRIPTION_REQUIRED: 'Series description is required',
+  FORM_VALIDATION_GENRE_REQUIRED: 'Genre is required',
+  FORM_VALIDATION_GENRE_MAX: 'Genre field must have less than or equal to 3 items',
+  FORM_VALIDATION_LANGUAGE_ID_REQUIRED: 'Language is required',
+  FORM_VALIDATION_TITLE_MAX: 'Series title must be at most 100 characters',
+  FORM_VALIDATION_TITLE_MATCHES: 'Sorry, only letters (a-z), numbers (0-9), special characters (\':?"!-_&()<>.,+=@#$%|) are allowed.',
+  FORM_VALIDATION_TITLE_REQUIRED: 'Series title is required',
+  FORM_VALIDATION_COVER_REQUIRED: 'Cover image is required!',
+  FORM_VALIDATION_BANNER_REQUIRED: 'Banner image is required!',
+  FORM_VALIDATION_CHAPTER_DESCRIPTION_MAX: 'Chapter description must be at most 2500 characters',
+  FORM_VALIDATION_CHAPTER_DESCRIPTION_REQUIRED: 'Chapter description is required',
+  FORM_VALIDATION_CHAPTER_NOTE_MAX: 'Chapter note must be at most 2500 characters',
+  FORM_VALIDATION_CHAPTER_PUBLISHED_REQUIRED: 'Published is required',
+  FORM_VALIDATION_CHAPTER_TITLE_MAX: 'Chapter title must be at most 100 characters',
+  FORM_VALIDATION_CHAPTER_TITLE_MATCHES: 'Sorry, only letters (a-z), numbers (0-9), special characters (\':?"!-_&()<>.,+=@#$%|) are allowed.',
+  FORM_VALIDATION_CHAPTER_TITLE_REQUIRED: 'Chapter title is required',
+  FORM_VALIDATION_CHAPTER_PAGES_MIN: 'Must contain atleast 1 image',
   // END FORM VALIDATION
-  LABEL_SINGLE_BANNER_DROPBOX:
-    'ここにバナーをドロップするか、クリックして参照してください。',
-  LABEL_SINGLE_COVER_DROPBOX:
-    'カバー写真をここにドロップするか、クリックして参照してください。',
-  LABEL_SINGLE_CHAPTER_COVER:
-    'カバー写真をここにドロップするか、クリックして参照してください。',
-  LABEL_SINGLE_BANNER_SUB:
-    'すべてのデバイスで最適な結果を得るには、1080 x 360 ピクセル以上の画像を使用してください。',
-  LABEL_SINGLE_COVER_SUB:
-    'すべてのデバイスで最適な結果を得るには、600 x 400 ピクセル以上の画像を使用してください。',
-  LABEL_SINGLE_CHAPTER_COVER_SUB:
-    'すべてのデバイスで最適な結果を得るには、360 x 360 ピクセル以上の画像を使用してください。',
-  LABEL_SERIES_TITLE: 'シリーズタイトル',
-  LABEL_LANGUAGE: '言語',
-  LABEL_PRIMARY_GENRE: '主なジャンル',
-  LABEL_SECONDARY_GENRE: '二次ジャンル',
-  LABEL_SERIES_DESCRIPTION: 'シリーズ説明',
-  LABEL_PUBLISH_CHAPTER: 'チャプターを公開',
-  LABEL_CHAPTER_TITLE: '章のタイトル',
-  LABEL_CHAPTER_DESCRIPTION: '章の説明',
-  LABEL_CHAPTER_NOTE_OPTIONAL: '章のメモ (オプション)',
-  LABEL_NOTE_TEXTAREA_MSG_BOTTOM: 'この注記は、章の最後に表示されます',
-  LABEL_UPLOAD_PAGES: 'ページをアップロード',
-  LABEL_CONGRATULATION: 'おめでとう',
-  LABEL_SUCCESS_CREATING_SERIES_MSG: 'シリーズが正常に作成されました。',
-  LABEL_ADD_CHAPTER: '章を追加',
-  LABEL_CREATE_NEW_SERIES: '新しいシリーズを作成する',
-  LABEL_MAX_GENRES: 'ジャンルは3つまで選べます',
-  LABEL_OPTIONAL_TAG_ERROR_MESSAGE: 'は予約語です。使用できません。',
-  LABEL_ALLOW_FOR_TRANSLATION: 'クラウドソース翻訳を許可する',
+  LABEL_SINGLE_BANNER_DROPBOX: 'Drop your banner here, or click to browse.',
+  LABEL_SINGLE_COVER_DROPBOX: 'Drop your cover photo here, or click to browse.',
+  LABEL_SINGLE_CHAPTER_COVER: 'Drop your cover photo here, or click to browse.',
+  LABEL_SINGLE_BANNER_SUB: 'For the best results on all devices, use an image that’s at least 1080 x 360 pixels.',
+  LABEL_SINGLE_COVER_SUB: 'For the best results on all devices, use an image that’s at least 600 x 400 pixels.',
+  LABEL_SINGLE_CHAPTER_COVER_SUB: 'For the best results on all devices, use an image that’s at least 360 x 360 pixels.',
+  LABEL_SERIES_TITLE: 'Series title',
+  LABEL_LANGUAGE: 'Languages',
+  LABEL_PRIMARY_GENRE: 'Primary genre',
+  LABEL_SECONDARY_GENRE: 'Secondary genre',
+  LABEL_SERIES_DESCRIPTION: 'Series description',
+  LABEL_PUBLISH_CHAPTER: 'Publish chapter',
+  LABEL_CHAPTER_TITLE: 'Chapter title',
+  LABEL_CHAPTER_DESCRIPTION: 'Chapter description',
+  LABEL_CHAPTER_NOTE_OPTIONAL: 'Chapter note (optional)',
+  LABEL_NOTE_TEXTAREA_MSG_BOTTOM: 'This note will be shown at the end of the chapter',
+  LABEL_UPLOAD_PAGES: 'Upload pages',
+  LABEL_CONGRATULATION: 'Congratulations',
+  LABEL_SUCCESS_CREATING_SERIES_MSG: 'You have successfully created your series.',
+  LABEL_ADD_CHAPTER: 'add chapter',
+  LABEL_CREATE_NEW_SERIES: 'create new series',
+  LABEL_MAX_GENRES: 'You can choose up to 3 genres',
+  LABEL_OPTIONAL_TAG_ERROR_MESSAGE: 'is a reserve word, cannot be used!',
+  LABEL_ALLOW_FOR_TRANSLATION: 'Allow CrowdSourced Translation'
 };
-
 export default consoleCreateSeries;
