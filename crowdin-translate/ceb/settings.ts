@@ -1,65 +1,50 @@
 import topNav from './commons/topNav';
 import common from './commons/common';
 import dashboard from './dashboard';
-
-const settings = {
-  ...topNav,
+const settings = { ...topNav,
   ...common,
   ...dashboard,
-  LABEL_HEADER_SETTINGS: 'Mga setting',
-  LABEL_SUB_HEADER_SECURITY: 'Seguridad',
-  LABEL_CHANGE_PASSWORD: 'Usba ang Password',
-  LABEL_CHANGE_USERNAME: 'Usba ang Username',
-  LABEL_DELETE_ACCOUNT: 'Pagtangtang sa Akong Account',
+  LABEL_HEADER_SETTINGS: 'Settings',
+  LABEL_SUB_HEADER_SECURITY: 'Security',
+  LABEL_CHANGE_PASSWORD: 'Change Password',
+  LABEL_CHANGE_USERNAME: 'Change Username',
+  LABEL_DELETE_ACCOUNT: 'Delete My Account',
   LABEL_DELETE_ACCOUNT_BODY: `
-  This is permanent. When you delete your Epico account, you won't makahimo sa pagkuha sa sulod o impormasyon nga imong'gipaambit nako sa Epico. Ang pagtangtang sa imong account permanente nga magtangtang sa imong profile, mga komento, ug mga post sa dingding,
-  uban sa bisan unsang serye ug kapitulo nga imong gibuhat.`,
+  This is permanent. When you delete your Epico account, you won't be able to retrieve the content or information you've shared on Epico. Deleting your account will permanently remove your profile, comments, and wall posts,
+  along with any series and chapter you created.`,
   LABEL_PASSWORD: 'Password',
-  FORM_VALIDATION_OLD_PASSWORD_REQUIRED:
-    'Ang kasamtangan nga password gikinahanglan',
-  FORM_VALIDATION_NEW_PASSWORD_REQUIRED: 'Bag-ong password ang gikinahanglan',
-  FORM_VALIDATION_NEW_PASSWORD_MIN:
-    'Kinahanglang mas taas kay sa 12 ka karakter',
-  LABEL_CHANGE_PASSWORD_SUCCESS_MSG:
-    'Ang imong password malampuson nga na-update',
-  LABEL_CHANGE_PASSWORD_INCORRECT_PASSWORD_MSG: 'Sayop nga password',
-  LABEL_CHANGE_PASSWORD_LIMIT_EXCEEDED_MSG:
-    'Milapas na sa limitasyon palihog sulayi pag-usab unya',
-  LABEL_CHANGE_PASSWORD_UNABLE_TO_PROCESS: 'Dili maproseso ang imong hangyo',
-  LABEL_OLD_PASSWORD: 'Kasamtangang password',
-  LABEL_NEW_PASSWORD: 'Bag-ong password',
-  LABEL_UPDATE_PASSWORD: 'I-update ang password',
-  LABEL_NEW_USERNAME: 'Bag-ong username',
-  LABEL_CHANGE_USERNAME_SUCCESS_MSG:
-    'Ang imong username malampuson nga na-update',
-  FORM_VALIDATION_USERNAME_MATCHES:
-    'Pasensya, gamay ra nga letra (a-z), numero (0-9), espesyal nga karakter (.-_) wala’y lugar nga gitugotan.',
-  FORM_VALIDATION_USERNAME_REQUIRED: 'Username gikinahanglan',
-  LABEL_PAYMENT_METHOD: 'Paagi sa pagbayad',
-  LABEL_ACCEPT_PATMENTS_HEADER: 'Dawata ang mga Bayad',
-  LABEL_DONATION_SETTINGS_HEADER: 'Mga Setting sa Donasyon',
-  LABEL_CURRENCY_SUB_HEADER: 'Salapi',
-  LABEL_CURRENCY:
-    'Pilia ang kuwarta nga gusto nimo nga ibayad sa imong mga tigsuporta. Kung wala nalista ang imong kuwarta sa balay, awtomatiko nga i-convert kini sa imong provider sa pagbayad para kanimo.',
-  LABEL_MIN_DONATION_HEADER: 'Itakda ang Minimum nga Presyo sa Donasyon',
-  LABEL_THANK_YOU_MESSAGE_HEADER: 'Auto Salamat Mensahe',
-  LABEL_THANK_YOU:
-    'Usa ka mensahe nga ipadala kung adunay nagdonar. Adunay ka higayon nga magpadala usab usa ka personal.',
-  LABEL_SUBMIT_PAYMENT_SETTING: 'Isumite',
-  FORM_VALIDATION_THANK_YOU: 'Daghang salamat sa inyong suporta',
-  FORM_VALIDATION_UPDATE_SUCCESS:
-    'Malampusong gi-update ang mga setting sa donasyon!',
-  LABEL_VERIFY_PAYPAL:
-    'Palihug pamatud-i ang email nga gipadala kanimo sa Paypal aron makompleto ang onboarding ug magsugod sa pagdawat sa mga bayad.',
-  LABEL_PAYPAL:
-    'Ang Paypal kinahanglan nga konektado aron makadawat mga donasyon gikan sa ubang mga tiggamit!',
-  LABEL_DISAGREE: 'Dili mouyon',
-  LABEL_AGREE: 'Uyon',
-  LABEL_SETTINGS_LANGUAGE: 'Pinulongan sa Settings',
-  LABEL_PAYMENT_ENABLED: 'Gipaandar',
-  LABEL_PAYMENT_DISABLED: 'Nabaldado',
-  LABEL_ACCEPT_DESCRIPTION:
-    'Dawata ang mga credit card ug balanse sa PayPal. Gibayran dayon sa imong PayPal.',
+  FORM_VALIDATION_OLD_PASSWORD_REQUIRED: 'Current password is required',
+  FORM_VALIDATION_NEW_PASSWORD_REQUIRED: 'New password is required',
+  FORM_VALIDATION_NEW_PASSWORD_MIN: 'Must be longer than 12 characters',
+  LABEL_CHANGE_PASSWORD_SUCCESS_MSG: 'Your password was successfully updated',
+  LABEL_CHANGE_PASSWORD_INCORRECT_PASSWORD_MSG: 'Incorrect password',
+  LABEL_CHANGE_PASSWORD_LIMIT_EXCEEDED_MSG: 'Limit exceeded please try again later',
+  LABEL_CHANGE_PASSWORD_UNABLE_TO_PROCESS: 'Unable to process your request',
+  LABEL_OLD_PASSWORD: 'Current password',
+  LABEL_NEW_PASSWORD: 'New password',
+  LABEL_UPDATE_PASSWORD: 'Update password',
+  LABEL_NEW_USERNAME: 'New username',
+  LABEL_CHANGE_USERNAME_SUCCESS_MSG: 'Your username was successfully updated',
+  FORM_VALIDATION_USERNAME_MATCHES: 'Sorry, only small letters (a-z), numbers (0-9), special characters (.-_) no space are allowed.',
+  FORM_VALIDATION_USERNAME_REQUIRED: 'Username is required',
+  LABEL_PAYMENT_METHOD: 'Payment Method',
+  LABEL_ACCEPT_PATMENTS_HEADER: 'Accept Payments',
+  LABEL_DONATION_SETTINGS_HEADER: 'Donation Settings',
+  LABEL_CURRENCY_SUB_HEADER: 'Currency',
+  LABEL_CURRENCY: 'Choose the currency you want your supporters to pay. If your home currency isn’t listed, your payment provider will automatically convert it for you.',
+  LABEL_MIN_DONATION_HEADER: 'Set Minimum Donation Price',
+  LABEL_THANK_YOU_MESSAGE_HEADER: 'Auto Thank You Message',
+  LABEL_THANK_YOU: 'A message to be sent when someone donates. You’ll have the chance to send a personal one too.',
+  LABEL_SUBMIT_PAYMENT_SETTING: 'Submit',
+  FORM_VALIDATION_THANK_YOU: 'Thank you so much for your support',
+  FORM_VALIDATION_UPDATE_SUCCESS: 'Successfully updated donation settings!',
+  LABEL_VERIFY_PAYPAL: 'Please verify the email sent to you by Paypal to complete onboarding and start accepting payments.',
+  LABEL_PAYPAL: 'Paypal must be connected to receive donations from other users!',
+  LABEL_DISAGREE: 'Disagree',
+  LABEL_AGREE: 'Agree',
+  LABEL_SETTINGS_LANGUAGE: 'Settings Language',
+  LABEL_PAYMENT_ENABLED: 'Enabled',
+  LABEL_PAYMENT_DISABLED: 'Disabled',
+  LABEL_ACCEPT_DESCRIPTION: 'Accept credit cards and PayPal balance. Paid out to your PayPal instantly.'
 };
-
 export default settings;
