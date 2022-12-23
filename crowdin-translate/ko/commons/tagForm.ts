@@ -1,6 +1,5 @@
 const tagForm = {
-  LABEL_TAG_TEXTFIELD: '태그(선택 사항 - 최대 5개)',
-  LABEL_TAG_PLACEHOLDER: '태그',
+  LABEL_TAG_TEXTFIELD: 'Tags(optional - max 5)',
+  LABEL_TAG_PLACEHOLDER: 'Tags'
 };
-
 export default tagForm;

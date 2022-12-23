@@ -1,9 +1,8 @@
 const donationBox = {
-  LABEL_DONATE_FOR: '寄付する',
-  LABEL_DONATE_BACK: '戻る',
-  LABEL_DONATE_MINIMUM: '最低限の寄付は',
-  LABEL_DONATE: '寄付',
-  LABEL_EPICO_DESCRIPTION: 'エピコは手数料がかかりません！',
+  LABEL_DONATE_FOR: 'Donate for',
+  LABEL_DONATE_BACK: 'Back',
+  LABEL_DONATE_MINIMUM: 'Minimum donation is',
+  LABEL_DONATE: 'Donate',
+  LABEL_EPICO_DESCRIPTION: 'Epico doesn’t take a fee!'
 };
-
 export default donationBox;

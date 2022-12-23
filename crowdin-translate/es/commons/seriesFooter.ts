@@ -11,7 +11,6 @@ const seriesFooter = {
   LABEL_SERIES_YOU_MIGHT_LIKE: 'Series you might like',
   LABEL_CREATOR: 'Creator',
   LABEL_ADD_A_COMMENT: 'Add a comment',
-  LABEL_SEE_ALL: 'See all',
+  LABEL_SEE_ALL: 'See all'
 };
-
 export default seriesFooter;

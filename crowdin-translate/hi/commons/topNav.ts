@@ -15,7 +15,6 @@ const topNav = {
   TOOLTIP_MENU: 'Menu',
   LABEL_SIGNED_IN_AS: 'Signed in as',
   LABEL_MY_PROFILE: 'My Profile',
-  LABEL_MY_ACCOUNT_SETTINGS: 'My Account Setting',
+  LABEL_MY_ACCOUNT_SETTINGS: 'My Account Setting'
 };
-
 export default topNav;

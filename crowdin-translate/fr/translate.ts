@@ -1,26 +1,22 @@
 import topNav from './commons/topNav';
 import common from './commons/common';
 import authModal from './commons/authModal';
-
-const translate = {
-  ...topNav,
+const translate = { ...topNav,
   ...common,
   ...authModal,
   //translate page
   SCANLATE_BANNER_HEADER: 'Hello Scanlators!',
-  SCANLATE_BANNER_CONTENT:
-    'Soutenez les créateurs en les aidant à atteindre un marché plus large Accédez gratuitement à toutes les bandes dessinées Travaillez avec les créateurs dans un cadre légal Dialogue/manuscrit consultable Glossaire intégré pour les équipes changeantes',
-  SCANLATE_BANNER_HEADER_2:
-    "Vos bandes dessinées méritent d'être lues par le monde",
-  SCANLATE_BANNER_CONTENT_2: `Service de traduction crowdsourcé pour les bandes dessinées, vous n\'avez pas trouvé votre langue ? Envoie-nous un message!`,
-  LABEL_CONTENT_HEADER: 'Ici, vous pouvez scanner votre série préférée.',
-  LABEL_SEARCH_SERIES: 'Rechercher une série',
-  LABEL_LANGUAGE: 'Langue',
-  LABEL_ALL: 'Tout',
-  LABEL_NO_AVAILABLE_SERIES: 'Aucune série disponible pour la traduction',
-  LABEL_LOADING: 'Chargement...',
-  LABEL_PREVIEW: 'Aperçu',
-  LABEL_SAVE: 'sauvegarder',
+  SCANLATE_BANNER_CONTENT: 'Support creators by helping them reach a larger market Gain access to all comics for free Work with creators in a legal setting Searchable dialogue/manuscript Built in glossary for changing teams',
+  SCANLATE_BANNER_HEADER_2: 'Your Comics Deserves To Be Read By The World',
+  SCANLATE_BANNER_CONTENT_2: `Crowdsourced translation service for comics, couldn't find your language? Send us a message!`,
+  LABEL_CONTENT_HEADER: 'Here you can scanlate your favorite Series.',
+  LABEL_SEARCH_SERIES: 'Search Series',
+  LABEL_LANGUAGE: 'Language',
+  LABEL_ALL: 'All',
+  LABEL_NO_AVAILABLE_SERIES: 'No Available Series for Translation',
+  LABEL_LOADING: 'Loading...',
+  LABEL_PREVIEW: 'Preview',
+  LABEL_SAVE: 'Save',
   LABEL_GUIDE: 'Guide',
   LABEL_TRANSLATE: 'Scanlate',
   LABEL_TO: 'to',
@@ -29,43 +25,40 @@ const translate = {
   LABEL_CREDITS: 'Credits',
   LABEL_SUBMISSION_SUCCESS: 'Your Submission has been saved!',
   LABEL_SUBMISSION_ERROR: 'There is an error in your submission',
-
   //Pages Tab//
   LABEL_PAGE: 'Page:',
-  LABEL_PAGES: 'pages',
-  LABEL_DOWNLOAD: 'Télécharger',
-  LABEL_OVERRIDE: 'remplacer par une image redessinée ?',
-  LABEL_SELECT_CLEAN_VERSIONS: 'Sélectionnez des versions propres',
-  LABEL_SELECT_VERSIONS: 'Sélectionnez les variantes...',
-  LABEL_NO_UPLOADED_CLEAN_VERSION: 'Aucune version propre téléchargée',
-  LABEL_UPLOAD_CLEAN_IMAGE: 'télécharger une image propre',
-  LABEL_DOWNLOAD_CLEAN_IMAGE: 'télécharger une image propre',
+  LABEL_PAGES: 'Pages',
+  LABEL_DOWNLOAD: 'Download',
+  LABEL_OVERRIDE: 'override with redrawn image?',
+  LABEL_SELECT_CLEAN_VERSIONS: 'Select clean versions',
+  LABEL_SELECT_VERSIONS: 'Select versions...',
+  LABEL_NO_UPLOADED_CLEAN_VERSION: 'No uploaded clean version',
+  LABEL_UPLOAD_CLEAN_IMAGE: 'upload clean image',
+  LABEL_DOWNLOAD_CLEAN_IMAGE: 'download clean image',
   LABEL_TRANSLATION: 'Scanlation',
   LABEL_ADD_TEXT: 'Add Text',
   //Comment Tab
-  LABEL_COMMENT: 'Commentaire',
-  LABEL_COMMENT_HERE: 'Commentez ici...',
-  LABEL_MORE_COMMENTS: 'Plus de commentaires',
-  LABEL_SUBMIT: 'Soumettre',
-  LABEL_CANCEL: 'Annuler',
-  LABEL_REPLY: 'Réponse',
-  LABEL_UPDATE: 'Mise à jour',
-  LABEL_HOW_TO_COMMENT: 'Comment commenter',
-  LABEL_HOW_TO_COMMENT_1: 'Sélectionnez une zone à commenter',
-  LABEL_HOW_TO_COMMENT_2:
-    'Faites glisser pour mettre en surbrillance la zone souhaitée',
-  LABEL_HOW_TO_COMMENT_3:
-    'Cliquez sur la zone de texte indiquant Rédiger un commentaire, saisissez votre commentaire, puis cliquez sur Soumettre.',
+  LABEL_COMMENT: 'Comment',
+  LABEL_COMMENT_HERE: 'Comment here...',
+  LABEL_MORE_COMMENTS: 'More Comments',
+  LABEL_SUBMIT: 'Submit',
+  LABEL_CANCEL: 'Cancel',
+  LABEL_REPLY: 'Reply',
+  LABEL_UPDATE: 'Update',
+  LABEL_HOW_TO_COMMENT: 'How to comment',
+  LABEL_HOW_TO_COMMENT_1: 'Select an area to comment on',
+  LABEL_HOW_TO_COMMENT_2: 'Drag to highlight the desired area',
+  LABEL_HOW_TO_COMMENT_3: 'Click the text box that says Write a comment, type your comment, and click submit.',
   //Description Tab
-  LABEL_DESCRIPTION: 'La description',
-  LABEL_SERIES: 'Série',
-  LABEL_CHAPTER: 'Chapitre',
-  LABEL_SWITCH_LANGUAGE: 'Changer de langue',
-  LABEL_SERIES_TITLE: 'Titre de la série',
-  LABEL_SERIES_DESCRIPTION: 'Description de la série',
-  LABEL_CHAPTER_TITLE: 'Titre du chapitre',
-  LABEL_CHAPTER_DESCRIPTION: 'Description du chapitre',
-  LABEL_CHAPTER_AUTHOR_NOTE: `Note de l\'auteur du chapitre`,
+  LABEL_DESCRIPTION: 'Description',
+  LABEL_SERIES: 'Series',
+  LABEL_CHAPTER: 'Chapter',
+  LABEL_SWITCH_LANGUAGE: 'Switch Language',
+  LABEL_SERIES_TITLE: 'Series Title',
+  LABEL_SERIES_DESCRIPTION: 'Series Description',
+  LABEL_CHAPTER_TITLE: 'Chapter Title',
+  LABEL_CHAPTER_DESCRIPTION: 'Chapter Description',
+  LABEL_CHAPTER_AUTHOR_NOTE: `Chapter Author's Note`,
   //SFX Tab
   LABEL_UPLOAD: 'Upload',
   //History Tab
@@ -77,10 +70,10 @@ const translate = {
   //Credits Tab
   LABEL_CONTRIBUTORS: 'Contributors',
   LABEL_NO_CONTRIBUTORS: 'No Contributors',
-
   //Change
-  LABEL_CHANGE_PAGE:
-    'Il y a des modifications non enregistrées. Êtes-vous sûr de vouloir déménager ? Les modifications seront perdues',
+  LABEL_CHANGE_PAGE: 'There are unsaved changes. Are you sure you want to move away? Changes will be lost',
+  LABEL_OFFICIAL_CLEAN_VERSION: 'Official Version',
+  LABEL_MY_CLEAN_VERSION: 'my version',
+  LABEL_VERSION: 'version'
 };
-
 export default translate;

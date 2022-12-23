@@ -3,64 +3,51 @@ import common from './commons/common';
 import imageUploader from './commons/imageUploader';
 import genres from './commons/genres';
 import tagForm from './commons/tagForm';
-
-const consoleEditSeries = {
-  ...genres,
+const consoleEditSeries = { ...genres,
   ...common,
   ...topNav,
   ...imageUploader,
   ...tagForm,
-  LABEL_SERIES: 'मालिका',
-  LABEL_CHAPTER: 'धडा',
-  LABEL_EDIT: 'सुधारणे',
-  LABEL_EDIT_SERIES: 'मालिका संपादित करा',
-  LABEL_UPDATE: 'अपडेट करा',
+  LABEL_SERIES: 'series',
+  LABEL_CHAPTER: 'chapter',
+  LABEL_EDIT: 'Edit',
+  LABEL_EDIT_SERIES: 'Edit Series',
+  LABEL_UPDATE: 'Update',
   // FORM VALIDATION
-  FORM_VALIDATION_DESCRIPTION_MAX:
-    'मालिका वर्णनाचे शीर्षक जास्तीत जास्त २५०० वर्णांचे असणे आवश्यक आहे',
-  FORM_VALIDATION_DESCRIPTION_REQUIRED: 'मालिकेचे वर्णन आवश्यक आहे',
-  FORM_VALIDATION_GENRE_REQUIRED: 'शैली आवश्यक आहे',
-  FORM_VALIDATION_GENRE_MAX:
-    'शैली फील्डमध्ये 3 पेक्षा कमी किंवा समान आयटम असणे आवश्यक आहे',
-  FORM_VALIDATION_LANGUAGE_ID_REQUIRED: 'भाषा आवश्यक आहे',
-  FORM_VALIDATION_STATUS_REQUIRED: 'मालिका स्थिती आवश्यक',
-  FORM_VALIDATION_TITLE_MAX:
-    'मालिका शीर्षक जास्तीत जास्त 100 वर्णांचे असणे आवश्यक आहे',
-  FORM_VALIDATION_TITLE_MATCHES:
-    'क्षमस्व, फक्त अक्षरे (a-z), संख्या (0-9), विशेष वर्ण (\':?"!-_&()<>.,+=@#$%|) अनुमत आहेत.',
-  FORM_VALIDATION_TITLE_REQUIRED: 'मालिका शीर्षक आवश्यक आहे',
-  FORM_VALIDATION_COVER_REQUIRED: 'कव्हर इमेज आवश्यक आहे!',
-  FORM_VALIDATION_BANNER_REQUIRED: 'बॅनर प्रतिमा आवश्यक आहे!',
+  FORM_VALIDATION_DESCRIPTION_MAX: 'Series description title must be at most 2500 characters',
+  FORM_VALIDATION_DESCRIPTION_REQUIRED: 'Series description is required',
+  FORM_VALIDATION_GENRE_REQUIRED: 'Genre is required',
+  FORM_VALIDATION_GENRE_MAX: 'Genre field must have less than or equal to 3 items',
+  FORM_VALIDATION_LANGUAGE_ID_REQUIRED: 'Language is required',
+  FORM_VALIDATION_STATUS_REQUIRED: 'Series Status Required',
+  FORM_VALIDATION_TITLE_MAX: 'Series title must be at most 100 characters',
+  FORM_VALIDATION_TITLE_MATCHES: 'Sorry, only letters (a-z), numbers (0-9), special characters (\':?"!-_&()<>.,+=@#$%|) are allowed.',
+  FORM_VALIDATION_TITLE_REQUIRED: 'Series title is required',
+  FORM_VALIDATION_COVER_REQUIRED: 'Cover image is required!',
+  FORM_VALIDATION_BANNER_REQUIRED: 'Banner image is required!',
   // END FORM VALIDATION
-  LABEL_SINGLE_BANNER_DROPBOX:
-    'तुमचे बॅनर येथे टाका किंवा ब्राउझ करण्यासाठी क्लिक करा',
-  LABEL_SINGLE_COVER_DROPBOX:
-    'तुमचा कव्हर फोटो येथे टाका किंवा ब्राउझ करण्यासाठी क्लिक करा',
-  LABEL_SINGLE_BANNER_SUB:
-    'सर्व उपकरणांवरील सर्वोत्तम परिणामांसाठी, किमान 1080 x 360 पिक्सेल असलेली प्रतिमा वापरा',
-  LABEL_SINGLE_COVER_SUB:
-    'सर्व उपकरणांवरील सर्वोत्तम परिणामांसाठी, किमान 600 x 400 पिक्सेल असलेली प्रतिमा वापरा',
-  LABEL_SERIES_TITLE: 'मालिका शीर्षक',
-  LABEL_LANGUAGE: 'भाषा',
-  LABEL_PRIMARY_GENRE: 'प्राथमिक शैली',
-  LABEL_SECONDARY_GENRE: 'दुय्यम प्रकार',
-  LABEL_SERIES_STATUS: 'मालिका स्थिती',
-  LABEL_STATUS_ONGOING: 'चालू आहे',
-  LABEL_STATUS_COMPLETED: 'पूर्ण झाले',
-  LABEL_SERIES_DESCRIPTION: 'मालिकेचे वर्णन',
-  LABEL_PUBLISH_CHAPTER: 'अध्याय प्रकाशित करा',
-  LABEL_CHAPTER_TITLE: 'अध्याय शीर्षक',
-  LABEL_CHAPTER_DESCRIPTION: 'अध्याय वर्णन',
-  LABEL_CHAPTER_NOTE_OPTIONAL: 'धडा टीप (पर्यायी)',
-  LABEL_NOTE_TEXTAREA_MSG_BOTTOM: 'ही नोंद अध्यायाच्या शेवटी दर्शविली जाईल',
-  LABEL_NOT_FOUND_HEADER:
-    'अरेरे, आम्ही संपादनासाठी ही मालिका शोधण्यात अक्षम होतो',
-  LABEL_NOT_FOUND_MSG_1:
-    'जर तुम्हाला वाटत असेल की ही एपिको मालिका अस्तित्वात आहे, कृपया दिलेल्या मालिका आयडीसह आमच्या समर्थनाशी संपर्क साधा',
-  LABEL_NOT_FOUND_MSG_2: 'च्या भाषा आयडीसह',
-  LABEL_MAX_GENRES: 'तुम्ही 3 पर्यंत शैली निवडू शकता',
-  LABEL_OPTIONAL_TAG_ERROR_MESSAGE: 'राखीव शब्द आहे, वापरता येत नाही!',
-  LABEL_ALLOW_FOR_TRANSLATION: 'Crowdsourced Translation ला अनुमती द्या',
+  LABEL_SINGLE_BANNER_DROPBOX: 'Drop your banner here, or click to browse',
+  LABEL_SINGLE_COVER_DROPBOX: 'Drop your cover photo here, or click to browse',
+  LABEL_SINGLE_BANNER_SUB: 'For the best results on all devices, use an image that’s at least 1080 x 360 pixels',
+  LABEL_SINGLE_COVER_SUB: 'For the best results on all devices, use an image that’s at least 600 x 400 pixels',
+  LABEL_SERIES_TITLE: 'Series title',
+  LABEL_LANGUAGE: 'Languages',
+  LABEL_PRIMARY_GENRE: 'Primary genre',
+  LABEL_SECONDARY_GENRE: 'Secondary genre',
+  LABEL_SERIES_STATUS: 'Series Status',
+  LABEL_STATUS_ONGOING: 'Ongoing',
+  LABEL_STATUS_COMPLETED: 'Completed',
+  LABEL_SERIES_DESCRIPTION: 'Series description',
+  LABEL_PUBLISH_CHAPTER: 'Publish chapter',
+  LABEL_CHAPTER_TITLE: 'Chapter title',
+  LABEL_CHAPTER_DESCRIPTION: 'Chapter description',
+  LABEL_CHAPTER_NOTE_OPTIONAL: 'Chapter note (optional)',
+  LABEL_NOTE_TEXTAREA_MSG_BOTTOM: 'This note will be shown at the end of the chapter',
+  LABEL_NOT_FOUND_HEADER: 'Uh oh, we were unable to find this series for edit',
+  LABEL_NOT_FOUND_MSG_1: 'If you think this epico series exists kindly contact our support with the given series ID',
+  LABEL_NOT_FOUND_MSG_2: 'with language id of',
+  LABEL_MAX_GENRES: 'You can choose up to 3 genres',
+  LABEL_OPTIONAL_TAG_ERROR_MESSAGE: 'is a reserve word, cannot be used!',
+  LABEL_ALLOW_FOR_TRANSLATION: 'Allow CrowdSourced Translation'
 };
-
 export default consoleEditSeries;

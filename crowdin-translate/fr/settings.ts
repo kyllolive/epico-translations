@@ -1,63 +1,50 @@
 import topNav from './commons/topNav';
 import common from './commons/common';
 import dashboard from './dashboard';
-
-const settings = {
-  ...topNav,
+const settings = { ...topNav,
   ...common,
   ...dashboard,
-  LABEL_HEADER_SETTINGS: 'Réglages',
-  LABEL_SUB_HEADER_SECURITY: 'Sécurité',
-  LABEL_CHANGE_PASSWORD: 'Changer le mot de passe',
-  LABEL_CHANGE_USERNAME: "Changer le nom d'utilisateur",
-  LABEL_DELETE_ACCOUNT: 'Supprimer mon compte',
+  LABEL_HEADER_SETTINGS: 'Settings',
+  LABEL_SUB_HEADER_SECURITY: 'Security',
+  LABEL_CHANGE_PASSWORD: 'Change Password',
+  LABEL_CHANGE_USERNAME: 'Change Username',
+  LABEL_DELETE_ACCOUNT: 'Delete My Account',
   LABEL_DELETE_ACCOUNT_BODY: `
-  This is permanent. When you delete your Epico account, you won'ne pas être en mesure de récupérer le contenu ou les informations que vous'ai partagé sur Epico. La suppression de votre compte supprimera définitivement votre profil, vos commentaires et vos publications sur le mur,
-  ainsi que toute série et tout chapitre que vous avez créés.`,
-  LABEL_PASSWORD: 'Mot de passe',
-  FORM_VALIDATION_OLD_PASSWORD_REQUIRED: 'Le mot de passe actuel est requis',
-  FORM_VALIDATION_NEW_PASSWORD_REQUIRED: 'Un nouveau mot de passe est requis',
-  FORM_VALIDATION_NEW_PASSWORD_MIN: 'Doit contenir plus de 12 caractères',
-  LABEL_CHANGE_PASSWORD_SUCCESS_MSG:
-    'Votre mot de passe a été mis à jour avec succès',
-  LABEL_CHANGE_PASSWORD_INCORRECT_PASSWORD_MSG: 'Mot de passe incorrect',
-  LABEL_CHANGE_PASSWORD_LIMIT_EXCEEDED_MSG:
-    'Limite dépassée veuillez réessayer plus tard',
-  LABEL_CHANGE_PASSWORD_UNABLE_TO_PROCESS:
-    'Impossible de traiter votre demande',
-  LABEL_OLD_PASSWORD: 'Mot de passe actuel',
-  LABEL_NEW_PASSWORD: 'Nouveau mot de passe',
-  LABEL_UPDATE_PASSWORD: 'Mettre à jour le mot de passe',
-  LABEL_NEW_USERNAME: "Nouveau nom d'utilisateur",
-  LABEL_CHANGE_USERNAME_SUCCESS_MSG:
-    "Votre nom d'utilisateur a été mis à jour avec succès",
-  FORM_VALIDATION_USERNAME_MATCHES:
-    'Désolé, seules les lettres minuscules (a-z), les chiffres (0-9), les caractères spéciaux (.-_) sans espace sont autorisés.',
-  FORM_VALIDATION_USERNAME_REQUIRED: "Nom d'utilisateur est nécessaire",
-  LABEL_PAYMENT_METHOD: 'Mode de paiement',
-  LABEL_ACCEPT_PATMENTS_HEADER: 'Accepter les paiements',
-  LABEL_DONATION_SETTINGS_HEADER: 'Paramètres de don',
-  LABEL_CURRENCY_SUB_HEADER: 'Devise',
-  LABEL_CURRENCY:
-    'Choose the currency you want your supporters to pay. If your home currency isn’t listed, your payment provider will automatically convert it for you.',
+  This is permanent. When you delete your Epico account, you won't be able to retrieve the content or information you've shared on Epico. Deleting your account will permanently remove your profile, comments, and wall posts,
+  along with any series and chapter you created.`,
+  LABEL_PASSWORD: 'Password',
+  FORM_VALIDATION_OLD_PASSWORD_REQUIRED: 'Current password is required',
+  FORM_VALIDATION_NEW_PASSWORD_REQUIRED: 'New password is required',
+  FORM_VALIDATION_NEW_PASSWORD_MIN: 'Must be longer than 12 characters',
+  LABEL_CHANGE_PASSWORD_SUCCESS_MSG: 'Your password was successfully updated',
+  LABEL_CHANGE_PASSWORD_INCORRECT_PASSWORD_MSG: 'Incorrect password',
+  LABEL_CHANGE_PASSWORD_LIMIT_EXCEEDED_MSG: 'Limit exceeded please try again later',
+  LABEL_CHANGE_PASSWORD_UNABLE_TO_PROCESS: 'Unable to process your request',
+  LABEL_OLD_PASSWORD: 'Current password',
+  LABEL_NEW_PASSWORD: 'New password',
+  LABEL_UPDATE_PASSWORD: 'Update password',
+  LABEL_NEW_USERNAME: 'New username',
+  LABEL_CHANGE_USERNAME_SUCCESS_MSG: 'Your username was successfully updated',
+  FORM_VALIDATION_USERNAME_MATCHES: 'Sorry, only small letters (a-z), numbers (0-9), special characters (.-_) no space are allowed.',
+  FORM_VALIDATION_USERNAME_REQUIRED: 'Username is required',
+  LABEL_PAYMENT_METHOD: 'Payment Method',
+  LABEL_ACCEPT_PATMENTS_HEADER: 'Accept Payments',
+  LABEL_DONATION_SETTINGS_HEADER: 'Donation Settings',
+  LABEL_CURRENCY_SUB_HEADER: 'Currency',
+  LABEL_CURRENCY: 'Choose the currency you want your supporters to pay. If your home currency isn’t listed, your payment provider will automatically convert it for you.',
   LABEL_MIN_DONATION_HEADER: 'Set Minimum Donation Price',
   LABEL_THANK_YOU_MESSAGE_HEADER: 'Auto Thank You Message',
-  LABEL_THANK_YOU:
-    "Un message à envoyer lorsque quelqu'un fait un don. Vous aurez également la possibilité d'en envoyer un personnel.",
-  LABEL_SUBMIT_PAYMENT_SETTING: 'Soumettre',
-  FORM_VALIDATION_THANK_YOU: 'Merci beaucoup pour ton soutien',
-  FORM_VALIDATION_UPDATE_SUCCESS: 'Paramètres de don mis à jour avec succès !',
-  LABEL_VERIFY_PAYPAL:
-    "Veuillez vérifier l'e-mail qui vous a été envoyé par Paypal pour terminer l'intégration et commencer à accepter les paiements.",
-  LABEL_PAYPAL:
-    'Paypal doit être connecté pour recevoir les dons des autres utilisateurs !',
-  LABEL_DISAGREE: 'Être en désaccord',
-  LABEL_AGREE: 'Accepter',
-  LABEL_SETTINGS_LANGUAGE: 'Paramètres Langue',
-  LABEL_PAYMENT_ENABLED: 'Activé',
-  LABEL_PAYMENT_DISABLED: 'Handicapé',
-  LABEL_ACCEPT_DESCRIPTION:
-    'Acceptez les cartes de crédit et le solde PayPal. Payé sur votre PayPal instantanément.',
+  LABEL_THANK_YOU: 'A message to be sent when someone donates. You’ll have the chance to send a personal one too.',
+  LABEL_SUBMIT_PAYMENT_SETTING: 'Submit',
+  FORM_VALIDATION_THANK_YOU: 'Thank you so much for your support',
+  FORM_VALIDATION_UPDATE_SUCCESS: 'Successfully updated donation settings!',
+  LABEL_VERIFY_PAYPAL: 'Please verify the email sent to you by Paypal to complete onboarding and start accepting payments.',
+  LABEL_PAYPAL: 'Paypal must be connected to receive donations from other users!',
+  LABEL_DISAGREE: 'Disagree',
+  LABEL_AGREE: 'Agree',
+  LABEL_SETTINGS_LANGUAGE: 'Settings Language',
+  LABEL_PAYMENT_ENABLED: 'Enabled',
+  LABEL_PAYMENT_DISABLED: 'Disabled',
+  LABEL_ACCEPT_DESCRIPTION: 'Accept credit cards and PayPal balance. Paid out to your PayPal instantly.'
 };
-
 export default settings;

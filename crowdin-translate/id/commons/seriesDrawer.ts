@@ -10,7 +10,6 @@ const seriesDrawer = {
   LABEL_SEE_MORE: 'See more',
   LABEL_PUBLISHER_OTHER_WORK: "Publisher's other works",
   LABEL_SERIES_YOU_MIGHT_LIKE: 'Series you might like',
-  LABEL_NOT_PUBLISHED_CHAPTER: 'Not published',
+  LABEL_NOT_PUBLISHED_CHAPTER: 'Not published'
 };
-
 export default seriesDrawer;
