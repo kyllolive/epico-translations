@@ -1,37 +1,45 @@
 const landingPage = {
-  LABEL_MAIN_HEADER: 'Your Comics Deserves To Be Read By The World',
-  LABEL_MAIN_SUB_HEADER: 'Crowdsourced translation service for comics',
-  LABEL_PUBLISH: 'Publish',
-  LABEL_WORKS: 'How it works?',
-  LABEL_WORKS_1: 'Creator uploads original comic series',
-  LABEL_WORKS_2: 'Translator/Cleaner discovers comic series',
-  LABEL_WORKS_3: 'Cleaner removes the text from artwork',
-  LABEL_WORKS_4: 'Translator creates the translations using an inbrowser typesetting tool',
-  LABEL_WORKS_5: 'Creator approves the edits and have final publish rights',
-  LABEL_WORKS_6: 'Reader discovers and enjoys the translated version',
-  LABEL_BENEFITS: 'Who it benefits?',
-  LABEL_BENEFITOR_1: 'Creators',
-  LABEL_BENEFITOR_1_DESCRIPTION: `Increase reach/audience/fans
-  Easiest way to get your comics translated
-  Receive help with no strings attached
-  Earn every time your comics are read
-  Save time and money on translations.`,
-  LABEL_BENEFITOR_2: 'Readers',
-  LABEL_BENEFITOR_2_DESCRIPTION: `Unlimited access to all comics, graphic novels, manhwa and manga from all around the world
-  Support creators through monthly donations. We split all donations across titles you read.`,
-  LABEL_BENEFITOR_3: 'Scanlators',
-  LABEL_BENEFITOR_3_DESCRIPTION: `Support creators by helping them reach a larger market
-  Gain access to all comics for free
-  Work with creators in a legal setting
-  Searchable dialogue/manuscript
-  Built in glossary for changing teams`,
-  LABEL_FEATURES: 'Features',
-  LABEL_FEATURES_TITLE_1: 'CrowdSourced Comic Translations',
-  LABEL_FEATURES_TITLE_1_SUB_1: 'Access to comic translators worldwide',
-  LABEL_FEATURES_TITLE_1_SUB_1_DESCRIPTION: 'Access to thousands of passionate multilingual comics translators worldwide',
-  LABEL_FEATURES_TITLE_1_SUB_2: 'Effortless collaboration in a single workspace',
-  LABEL_FEATURES_TITLE_1_SUB_2_DESCRIPTION: `Use only one tool to another for different tasks. Translators, typesetters and proofreaders can easily participate in reviewing each other's work, picking up the work where they need to in the same workspace.`,
-  LABEL_FEATURES_TITLE_2: 'Specialized Tools For Managing Translations',
+  LABEL_MAIN_HEADER: "Vos bandes dessinées méritent d'être lues par le monde",
+  LABEL_MAIN_SUB_HEADER:
+    'Service de traduction participative pour les bandes dessinées',
+  LABEL_PUBLISH: 'Publier',
+  LABEL_WORKS: 'Comment ça fonctionne?',
+  LABEL_WORKS_1:
+    'Le créateur met en ligne une série de bandes dessinées originales',
+  LABEL_WORKS_2:
+    'Un traducteur/nettoyeur découvre une série de bandes dessinées',
+  LABEL_WORKS_3: "Le nettoyeur supprime le texte de l'illustration",
+  LABEL_WORKS_4:
+    "Le traducteur crée les traductions à l'aide d'un outil de composition intégré au navigateur",
+  LABEL_WORKS_5:
+    'Le créateur approuve les modifications et dispose des droits de publication finaux',
+  LABEL_WORKS_6: 'Le lecteur découvre et apprécie la version traduite',
+  LABEL_BENEFITS: 'À qui cela profite-t-il ?',
+  LABEL_BENEFITOR_1: 'Créateurs',
+  LABEL_BENEFITOR_1_DESCRIPTION: `Augmenter la portée/l\'audience/les fans
+  Le moyen le plus simple de faire traduire vos bandes dessinées
+  Recevez de l\'aide sans aucune condition
+  Gagnez chaque fois que vos bandes dessinées sont lues
+  Économisez du temps et de l\'argent sur les traductions.`,
+  LABEL_BENEFITOR_2: 'Lecteurs',
+  LABEL_BENEFITOR_2_DESCRIPTION: `Accès illimité à toutes les bandes dessinées, romans graphiques, manhwa et mangas du monde entier
+  Soutenez les créateurs par des dons mensuels. Nous répartissons tous les dons entre les titres que vous lisez.`,
+  LABEL_BENEFITOR_3: 'Scanlateurs',
+  LABEL_BENEFITOR_3_DESCRIPTION: `Soutenez les créateurs en les aidant à atteindre un marché plus large
+  Accédez gratuitement à toutes les bandes dessinées
+  Travailler avec des créateurs dans un cadre légal
+  Dialogue/manuscrit consultable
+  Glossaire intégré pour changer d\'équipe`,
+  LABEL_FEATURES: 'Fonctionnalités',
+  LABEL_FEATURES_TITLE_1: 'Traductions de bandes dessinées crowdsourcées',
+  LABEL_FEATURES_TITLE_1_SUB_1:
+    'Accès à des traducteurs de bandes dessinées dans le monde entier',
+  LABEL_FEATURES_TITLE_1_SUB_1_DESCRIPTION:
+    'Accès à des milliers de traducteurs de bandes dessinées multilingues passionnés dans le monde entier',
+  LABEL_FEATURES_TITLE_1_SUB_2:
+    'Collaboration sans effort dans un seul espace de travail',
+  LABEL_FEATURES_TITLE_1_SUB_2_DESCRIPTION: `Utilisez un seul outil à l\'autre pour différentes tâches. Les traducteurs, les compositeurs et les correcteurs d\'épreuves peuvent facilement participer à la révision du travail des autres, reprenant le travail là où ils en ont besoin dans le même espace de travail.`,
+  LABEL_FEATURES_TITLE_2: 'Outils spécialisés pour la gestion des traductions',
   LABEL_FEATURES_TITLE_2_SUB_1: ' Powerful tools that run on any browser',
   LABEL_FEATURES_TITLE_2_SUB_1_DESCRIPTION: `No need to pay for third-party tools for cleaning, typesetting
     or file sharing.`,
@@ -44,20 +52,24 @@ const landingPage = {
     different chapters. Glossaries helps new staff to jump right
     in.`,
   LABEL_FEATURES_TITLE_2_SUB_4: 'Control over what is published',
-  LABEL_FEATURES_TITLE_2_SUB_4_DESCRIPTION: ' Creators will always have the final cut for publishing',
+  LABEL_FEATURES_TITLE_2_SUB_4_DESCRIPTION:
+    ' Creators will always have the final cut for publishing',
   LABEL_FEATURES_TITLE_3: 'Support Creators',
   LABEL_FEATURES_TITLE_3_SUB_1: 'Support by Subscribing',
-  LABEL_FEATURES_TITLE_3_SUB_1_DESCRIPTION: 'Easy monetization - Control which pages are free and which you want to charge for. We offer the industry’s best revenue share rates with transparent and immediate payouts. Monetize from day one Instant Payout - no minumums',
-  LABEL_FEATURES_TITLE_3_SUB_2: 'Support by Translating',
-  LABEL_FEATURES_TITLE_3_SUB_2_DESCRIPTION: 'more translations = more readers more readers = more income to creators more income = more comics!',
+  LABEL_FEATURES_TITLE_3_SUB_1_DESCRIPTION:
+    'Monétisation facile - Contrôlez quelles pages sont gratuites et lesquelles vous souhaitez facturer. Nous offrons les meilleurs taux de partage des revenus du secteur avec des paiements transparents et immédiats. Monétisez dès le premier jour Paiement instantané - pas de minimum',
+  LABEL_FEATURES_TITLE_3_SUB_2: 'Assistance en traduisant',
+  LABEL_FEATURES_TITLE_3_SUB_2_DESCRIPTION:
+    'more translations = more readers more readers = more income to creators more income = more comics!',
   LABEL_FEATURES_TITLE_3_SUB_3: 'Support by Reading and Sharing',
   LABEL_FEATURES_TITLE_3_SUB_3_DESCRIPTION: ` Creators earn through Ad revenue sharing For every page read,
   a portion of the Ad revenues will go to the creators`,
-  LABEL_PIE_ROYALTY_RATE: `Industry's highest royalty rate of 95%`,
-  LABEL_PIE_TEXT_CONTENT: `Monetize your views from monthly subscription and ad revenues
-  sharing`,
-  LABEL_CREATOR: 'Creator',
-  LABEL_EPICO: 'epico',
-  LABEL_FEATURED_SERIES: 'Featured Series'
+  LABEL_PIE_ROYALTY_RATE: `Le taux de redevance le plus élevé de l\'industrie de 95 %`,
+  LABEL_PIE_TEXT_CONTENT: `Monétisez vos vues à partir des abonnements mensuels et des revenus publicitaires
+  partage`,
+  LABEL_CREATOR: 'Créateur',
+  LABEL_EPICO: 'épique',
+  LABEL_FEATURED_SERIES: 'Série en vedette',
 };
+
 export default landingPage;

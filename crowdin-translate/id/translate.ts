@@ -1,30 +1,34 @@
 import topNav from './commons/topNav';
 import common from './commons/common';
 import authModal from './commons/authModal';
-const translate = { ...topNav,
+
+const translate = {
+  ...topNav,
   ...common,
   ...authModal,
   //translate page
   SCANLATE_BANNER_HEADER: 'Hello Scanlators!',
-  SCANLATE_BANNER_CONTENT: 'Support creators by helping them reach a larger market Gain access to all comics for free Work with creators in a legal setting Searchable dialogue/manuscript Built in glossary for changing teams',
-  SCANLATE_BANNER_HEADER_2: 'Your Comics Deserves To Be Read By The World',
-  SCANLATE_BANNER_CONTENT_2: `Crowdsourced translation service for comics, couldn't find your language? Send us a message!`,
-  LABEL_CONTENT_HEADER: 'Here you can scanlate your favorite Series.',
-  LABEL_SEARCH_SERIES: 'Search Series',
-  LABEL_LANGUAGE: 'Language',
-  LABEL_ALL: 'All',
-  LABEL_NO_AVAILABLE_SERIES: 'No Available Series for Translation',
-  LABEL_LOADING: 'Loading...',
-  LABEL_PREVIEW: 'Preview',
-  LABEL_SAVE: 'Save',
-  LABEL_GUIDE: 'Guide',
-  LABEL_TRANSLATE: 'Scanlate',
-  LABEL_TO: 'to',
-  LABEL_CREATED_BY: 'created by',
-  LABEL_GLOSSARY: 'Glossary',
-  LABEL_CREDITS: 'Credits',
-  LABEL_SUBMISSION_SUCCESS: 'Your Submission has been saved!',
-  LABEL_SUBMISSION_ERROR: 'There is an error in your submission',
+  SCANLATE_BANNER_CONTENT:
+    'Dukung pembuat konten dengan membantu mereka menjangkau pasar yang lebih besar Dapatkan akses ke semua komik secara gratis Bekerja dengan pembuat konten dalam pengaturan hukum Dialog/manuskrip yang dapat ditelusuri Glosarium bawaan untuk mengubah tim',
+  SCANLATE_BANNER_HEADER_2: 'Komik Anda Layak Dibaca Oleh Dunia',
+  SCANLATE_BANNER_CONTENT_2: `Layanan terjemahan crowdsource untuk komik, tidak dapat menemukan bahasa Anda? Kirimi kami pesan!`,
+  LABEL_CONTENT_HEADER: 'Di sini Anda dapat memindai Seri favorit Anda.',
+  LABEL_SEARCH_SERIES: 'Cari Seri',
+  LABEL_LANGUAGE: 'Bahasa',
+  LABEL_ALL: 'Semua',
+  LABEL_NO_AVAILABLE_SERIES: 'Tidak Ada Seri yang Tersedia untuk Terjemahan',
+  LABEL_LOADING: 'Memuat...',
+  LABEL_PREVIEW: 'Pratinjau',
+  LABEL_SAVE: 'Menyimpan',
+  LABEL_GUIDE: 'Memandu',
+  LABEL_TRANSLATE: 'Pindai',
+  LABEL_TO: 'ke',
+  LABEL_CREATED_BY: 'dibuat oleh',
+  LABEL_GLOSSARY: 'Glosarium',
+  LABEL_CREDITS: 'Kredit',
+  LABEL_SUBMISSION_SUCCESS: 'Kiriman Anda telah disimpan!',
+  LABEL_SUBMISSION_ERROR: 'Ada kesalahan dalam pengiriman Anda',
+
   //Pages Tab//
   LABEL_PAGE: 'Page:',
   LABEL_PAGES: 'Pages',
@@ -48,17 +52,18 @@ const translate = { ...topNav,
   LABEL_HOW_TO_COMMENT: 'How to comment',
   LABEL_HOW_TO_COMMENT_1: 'Select an area to comment on',
   LABEL_HOW_TO_COMMENT_2: 'Drag to highlight the desired area',
-  LABEL_HOW_TO_COMMENT_3: 'Click the text box that says Write a comment, type your comment, and click submit.',
+  LABEL_HOW_TO_COMMENT_3:
+    'Click the text box that says Write a comment, type your comment, and click submit.',
   //Description Tab
-  LABEL_DESCRIPTION: 'Description',
-  LABEL_SERIES: 'Series',
-  LABEL_CHAPTER: 'Chapter',
-  LABEL_SWITCH_LANGUAGE: 'Switch Language',
-  LABEL_SERIES_TITLE: 'Series Title',
-  LABEL_SERIES_DESCRIPTION: 'Series Description',
-  LABEL_CHAPTER_TITLE: 'Chapter Title',
-  LABEL_CHAPTER_DESCRIPTION: 'Chapter Description',
-  LABEL_CHAPTER_AUTHOR_NOTE: `Chapter Author's Note`,
+  LABEL_DESCRIPTION: 'Keterangan',
+  LABEL_SERIES: 'Seri',
+  LABEL_CHAPTER: 'Bab',
+  LABEL_SWITCH_LANGUAGE: 'Ganti Bahasa',
+  LABEL_SERIES_TITLE: 'Judul Seri',
+  LABEL_SERIES_DESCRIPTION: 'Deskripsi Seri',
+  LABEL_CHAPTER_TITLE: 'Judul Bab',
+  LABEL_CHAPTER_DESCRIPTION: 'Deskripsi Bab',
+  LABEL_CHAPTER_AUTHOR_NOTE: `Catatan Penulis Bab`,
   //SFX Tab
   LABEL_UPLOAD: 'Upload',
   //History Tab
@@ -70,10 +75,13 @@ const translate = { ...topNav,
   //Credits Tab
   LABEL_CONTRIBUTORS: 'Contributors',
   LABEL_NO_CONTRIBUTORS: 'No Contributors',
+
   //Change
-  LABEL_CHANGE_PAGE: 'There are unsaved changes. Are you sure you want to move away? Changes will be lost',
+  LABEL_CHANGE_PAGE:
+    'There are unsaved changes. Are you sure you want to move away? Changes will be lost',
   LABEL_OFFICIAL_CLEAN_VERSION: 'Official Version',
   LABEL_MY_CLEAN_VERSION: 'my version',
-  LABEL_VERSION: 'version'
+  LABEL_VERSION: 'version',
 };
+
 export default translate;

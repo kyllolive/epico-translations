@@ -3,23 +3,26 @@ import topNav from './commons/topNav';
 import common from './commons/common';
 import authModal from './commons/authModal';
 import donationBox from './commons/donationBox';
-const profile = { ...donationBox,
+
+const profile = {
+  ...donationBox,
   ...genres,
   ...topNav,
   ...common,
   ...authModal,
-  NEW_COVER_ERROR_LABEL: 'Oops! We were unable to save your new cover',
-  LABEL_SAVE: 'Save',
-  LABEL_CANCEL: 'Cancel',
-  LABEL_SUCCESS_UPDATE_PROFILE: 'We were successful updating your profile',
-  LABEL_UNABLE_SAVE_CHANGES: 'Uh oh! We were unable to save your changes',
-  LABEL_ADD_ANOTHER: 'Add Another',
-  LABEL_EDIT_PROFILE: 'Edit Profile',
-  LABEL_JOINED_DATE: 'Joined date',
-  LABEL_UPDATE_PROFILE_INFORMATION: 'Quick update profile information',
-  LABEL_CHANGE_PROFILE_PICTURE: 'Change profile picture',
-  LABEL_ERROR_NEW_PROFILE: 'Oops! We were unable to save your new profile',
-  LABEL_ERROR_NEW_COVER: 'Oops! We were unable to save your new cover',
-  LABEL_ERROR_UPLOAD_COVER: 'Oops! We were unable to upload your cover'
+  NEW_COVER_ERROR_LABEL: '앗! 새 표지를 저장할 수 없습니다.',
+  LABEL_SAVE: '구하다',
+  LABEL_CANCEL: '취소',
+  LABEL_SUCCESS_UPDATE_PROFILE: '프로필을 업데이트했습니다.',
+  LABEL_UNABLE_SAVE_CHANGES: '어 오! 변경사항을 저장할 수 없습니다.',
+  LABEL_ADD_ANOTHER: '다른 항목 추가',
+  LABEL_EDIT_PROFILE: '프로필 편집',
+  LABEL_JOINED_DATE: '가입 날짜',
+  LABEL_UPDATE_PROFILE_INFORMATION: '빠른 업데이트 프로필 정보',
+  LABEL_CHANGE_PROFILE_PICTURE: '프로필 사진을 바꾸다',
+  LABEL_ERROR_NEW_PROFILE: '앗! 새 프로필을 저장할 수 없습니다.',
+  LABEL_ERROR_NEW_COVER: '앗! 새 표지를 저장할 수 없습니다.',
+  LABEL_ERROR_UPLOAD_COVER: '앗! 표지를 업로드할 수 없습니다.',
 };
+
 export default profile;

@@ -1,8 +1,9 @@
 const donationBox = {
-  LABEL_DONATE_FOR: 'Donate for',
-  LABEL_DONATE_BACK: 'Back',
-  LABEL_DONATE_MINIMUM: 'Minimum donation is',
-  LABEL_DONATE: 'Donate',
-  LABEL_EPICO_DESCRIPTION: 'Epico doesn’t take a fee!'
+  LABEL_DONATE_FOR: 'Donar para',
+  LABEL_DONATE_BACK: 'atrás',
+  LABEL_DONATE_MINIMUM: 'La donación mínima es',
+  LABEL_DONATE: 'Donar',
+  LABEL_EPICO_DESCRIPTION: '¡Epico no cobra honorarios!',
 };
+
 export default donationBox;

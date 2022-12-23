@@ -1,5 +1,6 @@
 const followButton = {
-  LABEL_FOLLOW: 'Follow',
-  LABEL_FOLLOWING: 'Following'
+  LABEL_FOLLOW: '따르다',
+  LABEL_FOLLOWING: '수행원',
 };
+
 export default followButton;

@@ -32,5 +32,5 @@ export default {
   consoleEditChapter,
   profile,
   translate,
-  dashboard
+  dashboard,
 };

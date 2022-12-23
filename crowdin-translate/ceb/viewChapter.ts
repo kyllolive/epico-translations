@@ -5,15 +5,18 @@ import seriesReader from './commons/seriesReader';
 import seriesFooter from './commons/seriesFooter';
 import authModal from './commons/authModal';
 import followButton from './commons/followButton';
-const viewChapter = { ...genres,
+
+const viewChapter = {
+  ...genres,
   ...common,
   ...seriesDrawer,
   ...seriesReader,
   ...seriesFooter,
   ...authModal,
   ...followButton,
-  LABEL_WARNING_MESSAGE: `This Series contains adult themes and situations and is recommended
-  for mature audiences. Viewer's discretions is advised. Proceed to view
-  content?`
+  LABEL_WARNING_MESSAGE: `Kini nga Serye adunay mga tema ug sitwasyon sa mga hamtong ug girekomenda
+  alang sa hamtong nga mga tumatan-aw. Gitambagan ang mga kabuot sa tumatan-aw. Padayon sa pagtan-aw
+  sulod?`,
 };
+
 export default viewChapter;

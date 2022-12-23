@@ -6,7 +6,8 @@ const landingPage = {
   LABEL_WORKS_1: 'Creator uploads original comic series',
   LABEL_WORKS_2: 'Translator/Cleaner discovers comic series',
   LABEL_WORKS_3: 'Cleaner removes the text from artwork',
-  LABEL_WORKS_4: 'Translator creates the translations using an inbrowser typesetting tool',
+  LABEL_WORKS_4:
+    'Translator creates the translations using an inbrowser typesetting tool',
   LABEL_WORKS_5: 'Creator approves the edits and have final publish rights',
   LABEL_WORKS_6: 'Reader discovers and enjoys the translated version',
   LABEL_BENEFITS: 'Who it benefits?',
@@ -28,8 +29,10 @@ const landingPage = {
   LABEL_FEATURES: 'Features',
   LABEL_FEATURES_TITLE_1: 'CrowdSourced Comic Translations',
   LABEL_FEATURES_TITLE_1_SUB_1: 'Access to comic translators worldwide',
-  LABEL_FEATURES_TITLE_1_SUB_1_DESCRIPTION: 'Access to thousands of passionate multilingual comics translators worldwide',
-  LABEL_FEATURES_TITLE_1_SUB_2: 'Effortless collaboration in a single workspace',
+  LABEL_FEATURES_TITLE_1_SUB_1_DESCRIPTION:
+    'Access to thousands of passionate multilingual comics translators worldwide',
+  LABEL_FEATURES_TITLE_1_SUB_2:
+    'Effortless collaboration in a single workspace',
   LABEL_FEATURES_TITLE_1_SUB_2_DESCRIPTION: `Use only one tool to another for different tasks. Translators, typesetters and proofreaders can easily participate in reviewing each other's work, picking up the work where they need to in the same workspace.`,
   LABEL_FEATURES_TITLE_2: 'Specialized Tools For Managing Translations',
   LABEL_FEATURES_TITLE_2_SUB_1: ' Powerful tools that run on any browser',
@@ -44,12 +47,15 @@ const landingPage = {
     different chapters. Glossaries helps new staff to jump right
     in.`,
   LABEL_FEATURES_TITLE_2_SUB_4: 'Control over what is published',
-  LABEL_FEATURES_TITLE_2_SUB_4_DESCRIPTION: ' Creators will always have the final cut for publishing',
+  LABEL_FEATURES_TITLE_2_SUB_4_DESCRIPTION:
+    ' Creators will always have the final cut for publishing',
   LABEL_FEATURES_TITLE_3: 'Support Creators',
   LABEL_FEATURES_TITLE_3_SUB_1: 'Support by Subscribing',
-  LABEL_FEATURES_TITLE_3_SUB_1_DESCRIPTION: 'Easy monetization - Control which pages are free and which you want to charge for. We offer the industry’s best revenue share rates with transparent and immediate payouts. Monetize from day one Instant Payout - no minumums',
+  LABEL_FEATURES_TITLE_3_SUB_1_DESCRIPTION:
+    'Easy monetization - Control which pages are free and which you want to charge for. We offer the industry’s best revenue share rates with transparent and immediate payouts. Monetize from day one Instant Payout - no minumums',
   LABEL_FEATURES_TITLE_3_SUB_2: 'Support by Translating',
-  LABEL_FEATURES_TITLE_3_SUB_2_DESCRIPTION: 'more translations = more readers more readers = more income to creators more income = more comics!',
+  LABEL_FEATURES_TITLE_3_SUB_2_DESCRIPTION:
+    'more translations = more readers more readers = more income to creators more income = more comics!',
   LABEL_FEATURES_TITLE_3_SUB_3: 'Support by Reading and Sharing',
   LABEL_FEATURES_TITLE_3_SUB_3_DESCRIPTION: ` Creators earn through Ad revenue sharing For every page read,
   a portion of the Ad revenues will go to the creators`,
@@ -58,6 +64,7 @@ const landingPage = {
   sharing`,
   LABEL_CREATOR: 'Creator',
   LABEL_EPICO: 'epico',
-  LABEL_FEATURED_SERIES: 'Featured Series'
+  LABEL_FEATURED_SERIES: 'Featured Series',
 };
+
 export default landingPage;

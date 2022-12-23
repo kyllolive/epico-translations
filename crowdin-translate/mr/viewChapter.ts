@@ -5,15 +5,18 @@ import seriesReader from './commons/seriesReader';
 import seriesFooter from './commons/seriesFooter';
 import authModal from './commons/authModal';
 import followButton from './commons/followButton';
-const viewChapter = { ...genres,
+
+const viewChapter = {
+  ...genres,
   ...common,
   ...seriesDrawer,
   ...seriesReader,
   ...seriesFooter,
   ...authModal,
   ...followButton,
-  LABEL_WARNING_MESSAGE: `This Series contains adult themes and situations and is recommended
-  for mature audiences. Viewer's discretions is advised. Proceed to view
-  content?`
+  LABEL_WARNING_MESSAGE: `या मालिकेत प्रौढ थीम आणि परिस्थिती आहेत आणि शिफारस केली जाते
+  प्रौढ प्रेक्षकांसाठी. दर्शकांच्या विवेकबुद्धीचा सल्ला दिला जातो. पाहण्यासाठी पुढे जा
+  सामग्री?`,
 };
+
 export default viewChapter;

@@ -1,16 +1,17 @@
 const seriesFooter = {
-  LABEL_INFORMATION_TAB_NEW_SERIES_MSG: 'NEW CHAPTER EVERY MONDAY, FRIDAY',
-  LABEL_PREVIOUS: 'Previous',
-  LABEL_NEXT: 'Next',
-  LABEL_COMMENTS: 'Comments',
+  LABEL_INFORMATION_TAB_NEW_SERIES_MSG: 'BAG-ONG KAPITULO KADA LUNES, BIYERNES',
+  LABEL_PREVIOUS: 'Kaniadto',
+  LABEL_NEXT: 'Sunod',
+  LABEL_COMMENTS: 'Mga komento',
   LABEL_POPULAR: 'Popular',
-  LABEL_NEWEST: 'Newest',
-  LABEL_REPLY: 'Reply',
-  LABEL_SHOW_MORE: 'Show more',
-  LABEL_PUBLISHER_OTHER_WORK: "Publisher's other works",
-  LABEL_SERIES_YOU_MIGHT_LIKE: 'Series you might like',
-  LABEL_CREATOR: 'Creator',
-  LABEL_ADD_A_COMMENT: 'Add a comment',
-  LABEL_SEE_ALL: 'See all'
+  LABEL_NEWEST: 'Pinakabag-o',
+  LABEL_REPLY: 'tubag',
+  LABEL_SHOW_MORE: 'Ipakita ang dugang',
+  LABEL_PUBLISHER_OTHER_WORK: 'Ang ubang mga buhat sa magmamantala',
+  LABEL_SERIES_YOU_MIGHT_LIKE: 'Serye nga tingali gusto nimo',
+  LABEL_CREATOR: 'Magbubuhat',
+  LABEL_ADD_A_COMMENT: 'Pagdugang og komento',
+  LABEL_SEE_ALL: 'Tan-awa ang tanan',
 };
+
 export default seriesFooter;

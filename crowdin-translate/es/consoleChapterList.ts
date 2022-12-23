@@ -1,7 +1,9 @@
 import topNav from './commons/topNav';
 import common from './commons/common';
 import deleteDialog from './commons/deleteDialog';
-const consoleChapterList = { ...topNav,
+
+const consoleChapterList = {
+  ...topNav,
   ...common,
   ...deleteDialog,
   LABEL_COLUMN_ID: 'ID',
@@ -21,6 +23,7 @@ const consoleChapterList = { ...topNav,
   LABEL_DELETE: 'Delete',
   LABEL_ROWS_PER_PAGE: 'Rows per page:',
   LABEL_PRIVATE_VIEW: 'Private View',
-  LABEL_SHARE_ACTION_MENU: 'Share/Collaborators'
+  LABEL_SHARE_ACTION_MENU: 'Share/Collaborators',
 };
+
 export default consoleChapterList;

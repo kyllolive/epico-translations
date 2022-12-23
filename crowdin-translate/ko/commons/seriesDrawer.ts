@@ -1,15 +1,16 @@
 const seriesDrawer = {
-  LABEL_INFORMATION_TAB_NEW_SERIES_MSG: 'NEW CHAPTER EVERY MONDAY, FRIDAY',
-  LABEL_INFORMATION: 'Information',
-  LABEL_LANGUAGE: 'Language',
-  LABEL_READ_CHAPTER_1: 'Read: Chapter 1',
-  LABEL_CREATORS: 'Creators',
-  LABEL_PUBLISHER: 'Publisher',
-  LABEL_ARTIST: 'Artist',
-  LABEL_AUTHOR: 'Author',
-  LABEL_SEE_MORE: 'See more',
-  LABEL_PUBLISHER_OTHER_WORK: "Publisher's other works",
-  LABEL_SERIES_YOU_MIGHT_LIKE: 'Series you might like',
-  LABEL_NOT_PUBLISHED_CHAPTER: 'Not published'
+  LABEL_INFORMATION_TAB_NEW_SERIES_MSG: '새로운 챕터 매주 월요일, 금요일',
+  LABEL_INFORMATION: '정보',
+  LABEL_LANGUAGE: '언어',
+  LABEL_READ_CHAPTER_1: '읽기: 1장',
+  LABEL_CREATORS: '크리에이터',
+  LABEL_PUBLISHER: '발행자',
+  LABEL_ARTIST: '아티스트',
+  LABEL_AUTHOR: '작가',
+  LABEL_SEE_MORE: '더보기',
+  LABEL_PUBLISHER_OTHER_WORK: '출판사의 다른 작품',
+  LABEL_SERIES_YOU_MIGHT_LIKE: '좋아할 만한 시리즈',
+  LABEL_NOT_PUBLISHED_CHAPTER: '게시되지 않음',
 };
+
 export default seriesDrawer;

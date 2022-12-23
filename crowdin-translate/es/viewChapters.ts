@@ -6,7 +6,9 @@ import topNav from './commons/topNav';
 import seriesFooter from './commons/seriesFooter';
 import authModal from './commons/authModal';
 import followButton from './commons/followButton';
-const viewChapters = { ...genres,
+
+const viewChapters = {
+  ...genres,
   ...common,
   ...seriesDrawer,
   ...seriesReader,
@@ -16,6 +18,7 @@ const viewChapters = { ...genres,
   ...followButton,
   LABEL_DESCRIPTION: 'Description',
   LABEL_CONTINUE_READING_BUTTON: 'Continue reading',
-  LABEL_FIRST_CHAPTER_BUTTON: 'First chapter'
+  LABEL_FIRST_CHAPTER_BUTTON: 'First chapter',
 };
+
 export default viewChapters;

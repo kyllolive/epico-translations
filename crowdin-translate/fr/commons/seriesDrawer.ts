@@ -1,15 +1,17 @@
 const seriesDrawer = {
-  LABEL_INFORMATION_TAB_NEW_SERIES_MSG: 'NEW CHAPTER EVERY MONDAY, FRIDAY',
-  LABEL_INFORMATION: 'Information',
-  LABEL_LANGUAGE: 'Language',
-  LABEL_READ_CHAPTER_1: 'Read: Chapter 1',
-  LABEL_CREATORS: 'Creators',
-  LABEL_PUBLISHER: 'Publisher',
-  LABEL_ARTIST: 'Artist',
-  LABEL_AUTHOR: 'Author',
-  LABEL_SEE_MORE: 'See more',
-  LABEL_PUBLISHER_OTHER_WORK: "Publisher's other works",
-  LABEL_SERIES_YOU_MIGHT_LIKE: 'Series you might like',
-  LABEL_NOT_PUBLISHED_CHAPTER: 'Not published'
+  LABEL_INFORMATION_TAB_NEW_SERIES_MSG:
+    'NOUVEAU CHAPITRE CHAQUE LUNDI, VENDREDI',
+  LABEL_INFORMATION: 'Informations',
+  LABEL_LANGUAGE: 'Langue',
+  LABEL_READ_CHAPTER_1: 'Lire : Chapitre 1',
+  LABEL_CREATORS: 'Créateurs',
+  LABEL_PUBLISHER: 'Éditeur',
+  LABEL_ARTIST: 'Artiste',
+  LABEL_AUTHOR: 'Auteur',
+  LABEL_SEE_MORE: 'Voir plus',
+  LABEL_PUBLISHER_OTHER_WORK: "Autres ouvrages de l'éditeur",
+  LABEL_SERIES_YOU_MIGHT_LIKE: 'Série que vous pourriez aimer',
+  LABEL_NOT_PUBLISHED_CHAPTER: 'Non publié',
 };
+
 export default seriesDrawer;

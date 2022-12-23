@@ -1,26 +1,29 @@
 import topNav from './commons/topNav';
 import common from './commons/common';
 import deleteDialog from './commons/deleteDialog';
-const consoleChapterList = { ...topNav,
+
+const consoleChapterList = {
+  ...topNav,
   ...common,
   ...deleteDialog,
-  LABEL_COLUMN_ID: 'ID',
-  LABEL_ADD_NEW_CHAPTER: 'Add New Chapter',
-  LABEL_COLUMN_TITLE: 'Title',
-  LABEL_COLUMN_LANGUAGE: 'Language',
-  LABEL_COLUMN_STATUS: 'Status',
-  LABEL_COLUMN_CHAPTERS: 'Chapters',
-  LABEL_COLUMN_PUBLISHED: 'Published',
-  LABEL_COLUMN_DESCRIPTION: 'Description',
-  LABEL_COLUMN_PAGES: 'Pages',
-  LABEL_COLUMN_CREATED_DATE: 'Created Date',
-  LABEL_NO_CHAPTERS: 'No Chapters',
-  LABEL_NO_SERIES: 'No Series',
-  LABEL_TRANSLATION: 'Translation',
-  LABEL_EDIT: 'Edit',
-  LABEL_DELETE: 'Delete',
-  LABEL_ROWS_PER_PAGE: 'Rows per page:',
-  LABEL_PRIVATE_VIEW: 'Private View',
-  LABEL_SHARE_ACTION_MENU: 'Share/Collaborators'
+  LABEL_COLUMN_ID: 'पहचान',
+  LABEL_ADD_NEW_CHAPTER: 'नया अध्याय जोड़ें',
+  LABEL_COLUMN_TITLE: 'शीर्षक',
+  LABEL_COLUMN_LANGUAGE: 'भाषा',
+  LABEL_COLUMN_STATUS: 'दर्जा',
+  LABEL_COLUMN_CHAPTERS: 'अध्याय',
+  LABEL_COLUMN_PUBLISHED: 'प्रकाशित',
+  LABEL_COLUMN_DESCRIPTION: 'विवरण',
+  LABEL_COLUMN_PAGES: 'पृष्ठों',
+  LABEL_COLUMN_CREATED_DATE: 'सृजित दिनांक',
+  LABEL_NO_CHAPTERS: 'कोई अध्याय नहीं',
+  LABEL_NO_SERIES: 'कोई श्रृंखला नहीं',
+  LABEL_TRANSLATION: 'अनुवाद',
+  LABEL_EDIT: 'संपादन करना',
+  LABEL_DELETE: 'मिटाना',
+  LABEL_ROWS_PER_PAGE: 'प्रति पृष्ठ पंक्तियाँ:',
+  LABEL_PRIVATE_VIEW: 'निजी दृश्य',
+  LABEL_SHARE_ACTION_MENU: 'शेयर/सहयोगी',
 };
+
 export default consoleChapterList;
